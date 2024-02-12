@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<theme>
+    <name>CREA_infantil</name>
+    <version>1.2</version>
+    <compatibility>2.6</compatibility>
+    <author>Consejería de Educación y Empleo - Junta de Extremadura</author>
+    <author-url>https://eScholarium.es/</author-url>
+    <license>Creative Commons by-sa</license>
+    <license-url>https://creativecommons.org/licenses/by-sa/4.0/</license-url>
+	<description>Estilo realizado por Consejería de Educación y Empleo de la Junta de Extremadura (https://eScholarium.es/) basado en el estilo EducaAnd Escolares de la Consejería de Educación y Deporte de la Junta de Andalucía (https://moocedu.juntadeandalucia.es/) para eXeLearning (http://exelearning.net/). Iconos basados en: Estilo EducaAnd Escolares, estilo DUA, Materials Icons de Google (Licencia Apache 2.0) y desarrollos propios de la Junta de Extremadura. Revisión y mejoras cofinanciadas con fondos FEDER (Fondo Europeo de Desarrollo Regional). Tipografía Boo desarrollada por José Manuel Boo Pouso (jboo@edu.xunta.es) denominada escolar8 con licencia para libre distribución sin ánimo de lucro</description>
+    <extra-head><![CDATA[<meta name="viewport" content="width=device-width, initial-scale=1" />
+]]></extra-head>
+    <edition-extra-head><![CDATA[<script type="text/javascript">if (typeof(exe_style)!='undefined' && exe_style.indexOf("content.css")!=-1) document.write('<scr'+'ipt type="text/javascript" src="'+exe_style.replace("content.css","_infantil_js.js")+'"></scr'+'ipt>')</script>]]></edition-extra-head>
+    <extra-body><![CDATA[<script type="text/javascript" src="_infantil_js.js"></script>]]></extra-body>
+</theme>
