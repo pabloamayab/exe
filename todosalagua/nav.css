@@ -6,13 +6,13 @@ body{padding:0;text-align:center}
 }
 #lbOverlay{background:#f3f3f3}
 #content{width:100%;max-width:1230px;min-width:300px;margin:0 auto;text-align:left;position:relative;padding-bottom:21px}
-#main-wrapper{padding:0 25px 1px 305px;background:#fff url(_escolares_left_column.gif) repeat-y 0 0;box-shadow:rgba(0,0,0,0.4) 0 3px 8px}
+#main-wrapper{padding:0 25px 1px 305px;background:#fff url(escolares_left_column.gif) repeat-y 0 0;box-shadow:rgba(0,0,0,0.4) 0 3px 8px}
 .no-nav #main-wrapper{padding-left:25px;background:#fff}
 #main{width:100%;padding-top:10px}
 #header,#emptyHeader{border:none;padding:40px 210px 20px 20px;background:none;font-size:2em}
 #emptyHeader{height:42px}
 #headerContent{color:#555;text-shadow:1px 1px 1px #FFF;font-weight:600}
-#nodeDecoration{padding:0 30px 0 0;margin:0 0 25px 0;border:none;text-shadow:none;background:none;border-bottom:2px solid #fd8417;background:url(_escolares_logo.png) no-repeat 100% 50%!important}
+#nodeDecoration{padding:0 30px 0 0;margin:0 0 25px 0;border:none;text-shadow:none;background:none;border-bottom:2px solid #fd8417;background:url(escolares_logo.png) no-repeat 100% 50%!important}
 #nodeTitle{color:#fd8417;letter-spacing:.5px;font-size:1.7em;font-weight:bold;margin-right:2.3em}
 #siteFooter{padding:5px 20px 20px 20px;text-align:right;margin-top:-56px}
 
@@ -33,7 +33,7 @@ body{padding:0;text-align:center}
 /* Pagination */
 .pagination{text-align:right;font-size:.95em}
 .pagination .sep{display:none}
-.pagination a{display:block;position:absolute;right:52px;width:32px;height:32px;padding:0;background:url(_escolares_nav_icons.png) no-repeat 0 0}
+.pagination a{display:block;position:absolute;right:52px;width:32px;height:32px;padding:0;background:url(escolares_nav_icons.png) no-repeat 0 0}
 body .pagination a{filter:alpha(opacity=100);opacity:1;outline:none}
 .pagination a span span{display:none}
 .pagination a span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
@@ -66,7 +66,7 @@ body .pagination a{filter:alpha(opacity=100);opacity:1;outline:none}
 /* Specific rules and impromevemts for Infantil style*/
 #header-options{margin:20px 0 0;position:absolute;top:2em;right:100px;z-index:100}
 
-#toggle-nav {font-size:.95em;margin-left:15px;margin-right:8px;background:transparent url(_escolares_menu.gif) no-repeat 5px 50%;padding:0 10px 0 32px;color:#444}
+#toggle-nav {font-size:.95em;margin-left:15px;margin-right:8px;background:transparent url(escolares_menu.gif) no-repeat 5px 50%;padding:0 10px 0 32px;color:#444}
 #header-options a:hover,#header-options a:focus{color:rgb(124, 63, 6)}
 #exe-client-search-text{max-width:50%}
 .exe-client-search-result{background:rgb(236, 208, 120);padding:0 2px}
@@ -96,7 +96,7 @@ body.no-nav #headerContent {padding-left: 0px;}
 .fijo #headerContent {position:absolute;}
 
 /*Zoom icons and logos*/
-#zoomin, #zoomout, #letraszoom {display: block;position: absolute;z-index: 101;top: 25px;width: 30px;height: 30px;padding: 0;background:url(_infantil_zoom_icons.png) no-repeat 0 0;background-size: 30px;}
+#zoomin, #zoomout, #letraszoom {display: block;position: absolute;z-index: 101;top: 25px;width: 30px;height: 30px;padding: 0;background:url(infantil_zoom_icons.png) no-repeat 0 0;background-size: 30px;}
 #zoomin {right: 290px;background-position: 0 -29px;}
 #zoomout {right: 360px;background-position: 0 -60px;}
 #letraszoom {right: 319px;background-position: 0 0;background-size: 34px;width: 34px;top:22px}
@@ -127,7 +127,7 @@ body.no-nav #headerContent {padding-left: 0px;}
 	#topPagination  .pagination  { width: 90px;}
 	#header-options{position:relative;top:0;left:0;margin:0;background:#FFF;font-size:.95em}
 	#header-options a{margin-left:0;display:block;color:#3a4749;border-bottom:0px solid #dbdbdb;line-height:2.6em;letter-spacing:1px;padding:0;}
-	#header-options a span{background:url(_escolares_menu.gif) no-repeat 18px 50%;padding-left:45px}
+	#header-options a span{background:url(escolares_menu.gif) no-repeat 18px 50%;padding-left:45px}
 	#header-options #print-page{display:none}
 	#header-options #toggle-nav{background:none;z-index:90;width:200px; }
 	#bottomPagination .page-counter{margin:0;padding-top:5px;display:inline-block}
