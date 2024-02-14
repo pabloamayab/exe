@@ -1,0 +1,425 @@
+@font-face {
+	font-family: 'Infantil';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('boo.woff2') format('woff2'), 
+		 url('boo.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/*.infantil*/
+.infantil {font-family:'Intantil', cursive}
+
+html,body{min-height:100%}
+html{padding:0}
+body{font:1.15em/2 "Infantil",Arial,Helvetica,sans-serif;padding:20px;margin:0;text-align:left;color:#444;background:#fff}
+input,select,textarea,.feedback{font-family:"Infantil",​Arial,Helvetica,sans-serif;font-size:1em}
+.pre-code,.highlighted-code{font-family:"Infantil",​Arial,Helvetica,sans-serif;font-size:.9em;border-radius:0}
+
+a{color:#cc6715}
+/* Header is also in single page */
+header#header #headerContent h1{color:#cc6715;border:none;margin-right:75px}
+#header h1{margin:0;font-size:1em;color:#00843D}
+#emptyHeader,#nodeDecoration{height:auto;font-size:1em;text-align:left;padding:16px 25px 16px 10px;border-bottom:3px solid #00843D;margin-bottom:0;background:url(_escolares_logo.png) no-repeat 100% 50%}
+#header{height:auto;font-size:1em;text-align:left;padding:16px 25px 16px 0px;border:none;margin-bottom:0;background:url(_escolares_logo.png) no-repeat 100% 50%}
+.exe-single-page #header{font-size:1.55em}
+#nodeTitle{font-size:1.55em;margin:0;color:#000000;padding-right:60px}
+#header h1,#nodeTitle{text-shadow:0 0 8px rgba(255,255,255,.6),0 0 5px rgba(255,255,255,.6),0 0 2px rgba(255,255,255,.9)}
+#exe-node-0 header.nodeDecoration h1.nodeTitle{color:#fff;background-color:#00843d;padding:5px 5px 5px 15px;margin:5px 0 0 0 !important;border:none!important}
+h1#nodeTitle{margin-right:0;padding-right: 0;}
+
+/* Safe long titles in SCORM */
+@media (max-width:420px){
+	#header{font-size:21px}
+	h1#nodeTitle{line-height:1.1em;font-size:21px}
+	body .iDeviceTitle{font-size:20px}
+	body .iDevice_header .toggle-idevice{position:absolute;right:13px;bottom:48px;margin:0}
+}
+/* .nodeTitle in single page */
+.nodeTitle{padding:5px 0;border-bottom:2px solid #ffa052;margin:5px 5px 5px 0;color:#00843D;font-size:1.5em;padding-right:60px}
+h1{font-size:1.5em;color:#444;font-weight:bold}
+h2{font-size:1.4em;color:#444;font-weight:bold}
+h3{font-size:1.35em;color:#444;font-weight:bold}
+h4{font-size:1.2em;font-weight:bold;color:#444}
+h5{font-size:1.1em;font-weight:bold;color:#444}
+h6{font-size:1em;font-weight:bold;color:#444}
+p{margin:1em 0}
+ol,ul{color:#444}
+
+#main{height:auto!important;height:300px;min-height:300px;padding-top:40px}
+#main h4{font-size:1.2em}
+#main h5{font-size:1.1em}
+#main h6{font-size:1em}
+.iDevice{margin:25px 0 1em 0}
+/* Modals */
+#pp_full_res .pp_title{color:#00843D;margin:0;padding:1em 0 .25em 0}
+#pp_full_res .pp_inline p{color:#444}
+/* SCORM navigation*/
+.previousnext a.previouslink,
+section.previousnext{display:none}
+/* Tables */
+.exe-table thead tr{background:none}
+
+/* Orange iDevices (default) */
+/* iDevice title */
+.iDeviceTitle{font-size:1.4em;display:inline;font-weight:normal;vertical-align:middle;top:15px;color:#2E2E2E;font-weight:bold;color:#FD8417}
+/* iDevice content */
+.iDevice_content{word-wrap:break-word;overflow:auto;text-align:left}
+.iDevice_inner{padding:10px 20px 20px 20px;background:#fff;box-shadow:0px 18px 16px -6px rgba(0,0,0,0.37); border-radius:0px 0px 20px 20px;border: 0px solid #FD8417;border-top-width: 2px;font-size: 1em;}
+.iDevice {border: 2px solid #FD8417;} 
+/* iDevice icons */
+.iDevice_header{padding:5px 0 5px 60px;position:relative;min-height:60px}
+.iDevice .iDevice_header.iDevice_header_noIcon{padding:5px 0 5px 60px;background-image:none}
+/* Buttons */
+.feedbackbutton,.feedback-button input,.iDevice_buttons input{text-decoration:none;background-color:#0065ab;padding:.3em 1em;color:#fff;transition:background-color 0.4s ease-in-out;display:inline-block;border:none;cursor:pointer}
+.feedbackbutton:hover,.feedback-button input:hover,.iDevice_buttons input:hover{background-color:#004b80}
+
+.emphasis0 .feedbackbutton,.emphasis0 .feedback-button input,.emphasis0 .iDevice_buttons input{background-color:#CC6715}
+.emphasis0 .feedbackbutton:hover,.emphasis0 .feedback-button input:hover,.emphasis0 .iDevice_buttons input:hover{background-color:#9D4C0A}
+
+.activityIdevice .iDevice .iDevice_header{background-image:url(icon_udl_exp_actividadN.svg)}
+.readingIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_exp_leeN.svg)}
+.GeoGebraIdevice .iDevice .iDevice_header {background-image:url(geogebra_icon.svg)}
+
+/* Blue iDevices */
+.UDLcontentIdevice-exp .iDevice_inner{padding:10px 20px 20px 20px;background:#fff;box-shadow:0px 18px 16px -6px rgba(0,0,0,0.37);border-radius:0px 0px 20px 20px;border: 0px solid #0065AB;border-top-width: 2px;}
+.UDLcontentIdevice-exp .iDeviceTitle{color:#0065AB}
+.UDLcontentIdevice-exp .iDevice {border: 2px solid #0065AB;} 
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table,
+.UDLcontentIdevice-exp .exe-table{border-color:#0065ab}
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table td,.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table th,
+.UDLcontentIdevice-exp .exe-table td,.UDLcontentIdevice-exp .exe-table th{border-color:#0065ab}
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table thead,
+.UDLcontentIdevice-exp .exe-table thead{background:#005088;color:#FFF}
+
+
+/* Green iDevices */
+.UDLcontentIdevice-eng .iDeviceTitle{color:#499113}
+.UDLcontentIdevice-eng .iDevice {border: 2px solid #499113;} 
+.UDLcontentIdevice-eng .iDevice_inner{border-color:#499113}
+
+.objectivesIdevice .iDevice  .iDevice_header{background-image:url(icon_udl_eng_objetivosN.svg)}
+.download-packageIdevice  .iDevice  .iDevice_header{background-image:url(icon_udl_eng_descargaN.svg);}
+.RssIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_eng_rssN.svg)}
+.RubricIdevice .iDevice .iDevice_header{background-image:url(icon_udl_eng_rubricaN.svg)}
+.OrientacionesalumnadofpdIdevice  .iDevice .iDevice_header,
+.OrientacionestutoriafpdIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_eng_rubricaN.svg)}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table,
+.UDLcontentIdevice-eng .exe-table{background:#fff;border-color:#549b0d}
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table td,.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table th,
+.UDLcontentIdevice-eng .exe-table td,.UDLcontentIdevice-eng .exe-table th{border-color:#549b0d}
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table thead,
+.UDLcontentIdevice-eng .exe-table thead{background:#437c0a;color:#FFF}
+
+.em_iDevice_udl_eng_like .feedbackbutton,.em_iDevice_udl_eng_like .feedback-button input,.em_iDevice_udl_eng_like .iDevice_buttons input,
+.UDLcontentIdevice-eng .feedbackbutton,.UDLcontentIdevice-eng .feedback-button input,.UDLcontentIdevice-eng .iDevice_buttons input{background-color:#499113}
+.em_iDevice_udl_eng_like .feedbackbutton:hover,.em_iDevice_udl_eng_like .feedback-button input:hover,.em_iDevice_udl_eng_like .iDevice_buttons input:hover,
+.UDLcontentIdevice-eng .feedbackbutton:hover,.UDLcontentIdevice-eng .feedback-button input:hover,.UDLcontentIdevice-eng .iDevice_buttons input:hover{background-color:#366c0e}
+
+
+/* Purple iDevices */
+.UDLcontentIdevice-rep .iDeviceTitle{color:#A25AC4}
+.UDLcontentIdevice-rep .iDevice {border: 2px solid #A25AC4;}
+.UDLcontentIdevice-rep .iDevice_inner{border-color:#A25AC4}
+
+.GalleryIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_galeriaN.svg)}
+.FileAttachIdeviceInc  .iDevice .iDevice_header{background-image:url(icon_udl_rep_adjuntoN.svg)}
+.CasopracticofpdIdevice  .iDevice .iDevice_header,
+.CasestudyIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_casoN.svg)}
+.CitasparapensarfpdIdevice  .iDevice  .iDevice_header,
+.ReflectionfpdIdevice  .iDevice .iDevice_header,
+.ReflectionfpdmodifIdevice  .iDevice .iDevice_header,
+.ReflectionIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_reflexionN.svg)}
+.EjercicioresueltofpdIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_ejemploN.svg)}
+.ParasabermasfpdIdevice  .iDevice .iDevice_header,
+.WikipediaIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_informarseN.svg)}
+.RecomendacionfpdIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_recomiendaN.svg)}
+.DebesconocerfpdIdevice  .iDevice .iDevice_header,
+.preknowledgeIdevice  .iDevice .iDevice_header{background-image:url(icon_udl_rep_conocerN.svg)}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table,
+.UDLcontentIdevice-rep .exe-table{background:#fff;border-color:#784aba}
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table td,.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table th,
+.UDLcontentIdevice-rep .exe-table td,.UDLcontentIdevice-rep .exe-table th{border-color:#784aba}
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table thead,
+.UDLcontentIdevice-rep .exe-table thead{background:#5f3996;color:#FFF}
+
+.em_iDevice_udl_rep_like .feedbackbutton,.em_iDevice_udl_rep_like .feedback-button input,.em_iDevice_udl_rep_like .iDevice_buttons input,
+.UDLcontentIdevice-rep .feedbackbutton,.UDLcontentIdevice-rep .feedback-button input,.UDLcontentIdevice-rep .iDevice_buttons input{background-color:#a25ac4}
+.em_iDevice_udl_rep_like .feedbackbutton:hover,.em_iDevice_udl_rep_like .feedback-button input:hover,.em_iDevice_udl_rep_like .iDevice_buttons input:hover,
+.UDLcontentIdevice-rep .feedbackbutton:hover,.UDLcontentIdevice-rep .feedback-button input:hover,.UDLcontentIdevice-rep .iDevice_buttons input:hover{background-color:#7d389e}
+
+.FileAttachIdeviceInc a{color:#412866}
+
+/* Carousel */
+.js .exe-carousel h2{color:#7c3f06}
+.fx-carousel-pagination a{background:#ee7f1a;text-decoration:none!important;color:#7c3f06;font-weight:bold}
+.fx-carousel-pagination a:hover,.fx-carousel-pagination a:focus{text-decoration:none;color:#444}
+.fx-carousel-pagination .fx-current a{background:#73D413;color:#444;text-decoration:none}
+.fx-carousel-content{display:none;background:#fff;padding:1px 15px .5em 15px;border-radius:5px;margin:0 65px;border:1px solid #444}
+
+/* Pagination */
+.js .exe-paginated h2{color:#7c3f06}
+.js .fx-pagination a{background:#ee7f1a;text-decoration:none!important;color:#444!important}
+.fx-pagination a:hover,.fx-pagination a:focus{color:#444}
+.js .fx-pagination .fx-current a{background:#73D413;color:#fff;text-decoration:none!important}
+.fx-page-content{background:#fff;border:1px solid #444}
+
+/* Accordion */
+.exe-accordion,.exe-accordion *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.exe-accordion{width:90%;margin:2em 0 2em 5%;border-top:1px solid #cc6715;border-left:1px solid #cc6715;border-right:2px solid #cc6715;border-bottom:2px solid #cc6715}
+.js .exe-accordion{overflow:hidden;box-shadow:0px 1px 3px rgba(0,0,0,0.25);border-radius:3px;background:#f1f1f1;width:86%;margin:0px auto}
+.fx-accordion-title,.exe-accordion h2{width:100%;padding:15px;display:inline-block;background-color:#fff;transition:all linear 0.15s;color:#cc6715}
+a.fx-accordion-title h2:before{content:'+';font-size:1em;background-color:#cc6715;color:white;transition:transform .5s ease-in;position:relative;left:-28px}
+a.fx-accordion-title h2:hover:before{content:"\25be";font-size:1em;background-color:#cc6715;color:white;transition:transform .5s ease-in;position:relative;left:-25px}
+.fx-accordion-title{border-top:1px solid #cc6715!important}
+.fx-accordion-title-0{border-bottom:1px solid #cc6715}
+#main .exe-accordion h2{margin:0;font-size:1em;font-weight:bold}
+.js .exe-accordion h2{padding:0;border:0;display:block;background:none}
+.js .fx-accordion-title{text-decoration:none;padding:10px 15px 10px 0px;color:#cc6715!important;background-color:#fff!important}
+.fx-accordion-title.active,.fx-accordion-title:hover{filter:alpha(opacity=90);opacity:.9;text-decoration:none}
+.fx-accordion-section:last-child .fx-accordion-title{border-left:30px solid #cc6715!important}
+.fx-afx-accordion-titleccordion-content{padding:0 15px;display:none;background-color:#f1f1f1;border-top:1px solid #cc6715}
+
+/* Tabs */
+.exe-tabs .fx-tabs a{padding:20px 15px}
+.exe-tabs .fx-tabs a:hover,.exe-tabs .fx-tabs a:focus{text-decoration:none}
+.fx-tabs .fx-current a{background:#f3f3f3;border-top:5px solid #cc6715;padding:15px}
+.exe-tabs .fx-tabs a:before{content:'\229C';padding-right:10px}
+.exe-tabs .fx-tab-content{background:#f3f3f3;padding:15px;border-top:5px solid #cc6715;position:relative;z-index:99;bottom:10px}
+.exe-tabs .fx-default-panel{border-top-left-radius:0}
+.exe-tabs .fx-tabs .fx-current a{background:#f3f3f3;border-top:5px solid #cc6715;padding:15px;color:#cc6715}
+.iDevice_content .exe-tabs .fx-tab-content{background:#f3f3f3;border-top:5px solid #cc6715;padding:15px;color:#444}
+.exe-tabs .fx-tabs a,.exe-tabs .fx-tabs a:before{color:#cc6715}
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs .fx-current a{border-top-color:#549b0d;color:#499113}
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs .fx-current a{border-top-color:#784aba;color:#784aba}
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs .fx-current a{border-top-color:#0065ab;color:#0065ab}
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tab-content{border-top-color:#549b0d;color:#444}
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tab-content{border-top-color:#784aba;color:#444}
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tab-content{border-top-color:#0065ab;position:relative;z-index:99;bottom:10px;color:#444}
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs a,.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs a:before{color:#499113}
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs a,.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs a:before{color:#784aba}
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs a,.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs a:before{color:#0065ab}
+
+/* Time line */
+div.fx-timeline-container{border-left:2px solid #872C1A!important}
+.fx-timeline-major h2 a{background-color:#872C1A!important}
+.fx-timeline-major h2 a:hover,.fx-timeline-major h2 a:focus{background-color:#9C4938!important}
+.fx-timeline-minor h3 a{color:#872C1A!important}
+.fx-timeline-minor h3 a:after{content:"\21D8";margin-left:10px;color:#872C1A!important}
+.fx-timeline-minor h3 a.open:after{content:"\21D6";margin-left:10px;color:#872C1A!important}
+.fx-timeline-minor h3 a:hover,.fx-timeline-minor h3 a:focus{color:#872C1A!important}
+.fx-timeline-container a.fx-timeline-expand{color:#7c3f06!important;background:#fff!important;border:1px solid #7c3f06;font-weight:bold}
+.fx-timeline-container a.fx-timeline-expand:hover{color:#fff!important;background:#872C1A!important}
+
+/* Note */
+.classnote{border:2px solid #444;-webkit-border-bottom-left-radius:20px;-moz-border-radius-bottom-left:20px;border-bottom-left-radius:20px;background:#Fff;padding-left:10px;padding-right:10px;padding-top:5px;margin-top:5px;margin-bottom:20px;width:35.5%;margin-left:63%}
+.notetitleex{font:italic bold 14px verdana;cursor:pointer;padding-left:px;padding-bottom:5px;color:#444;border-bottom:none!important}
+
+.exe-download-package-link a{background:#333;color:white}
+
+#siteFooter{font-size:.95em;margin:25px 0}
+#siteFooter a{color:#DB0B00}
+
+.ExternalUrlIdevice iframe{border:none}
+/* Lightbox */
+.exeImageGallery{width:100%}
+#lbOverlay{background-color:#e2e2e2}
+#lbOuterContainer{border-color:#ddd}
+
+/* base.css */
+.block,.feedback{padding:0}
+li{list-style-position:outside}
+#wikipedia-content ul li{list-style-image:none;margin-bottom:auto}
+
+/* Hide/Show iDevice */
+.toggle-idevice{text-align:right;display:block;margin-right:13px;line-height:21px;height:21px}
+.iDevice_header .toggle-idevice{position:absolute;right:13px;bottom:13px;margin:0}
+.toggle-idevice{margin-top:5px;margin-bottom:0px}
+.toggle-idevice a{display:inline-block;width:20px;height:20px;background:url(_escolares_icons.png) no-repeat 0 -20px}  
+.toggle-idevice .show-idevice{background-position:0 0}
+.toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+.toggle-idevice + .iDevice.emphasis0{margin-top:0}
+
+/* Links */
+.iDevice a,#siteFooter a,#packageLicense a,.toggle-idevice a{text-decoration:underline}
+.iDevice a:hover,#siteFooter a:hover,#packageLicense a:hover,.toggle-idevice a:hover{text-decoration:none}
+
+/* Licenses */
+#packageLicense{text-align:left;font-size:.8em;padding:0 20px;color:#444;line-height:1em;margin:0 0 25px 0;background:#526668;border-top:1px solid #00843d}
+#packageLicense p{margin:20px 0}
+#packageLicense a{color:#444;text-decoration:underline}
+#packageLicense.propietary{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+#packageLicense.cc{padding:0 20px 10px 110px;background:transparent url(_escolares_licenses.gif) no-repeat 20px 5px}
+#packageLicense.cc-by-sa{background-position:20px -95px}
+#packageLicense.cc-by-nd{background-position:20px -195px}
+#packageLicense.cc-by-nc{background-position:20px -295px}
+#packageLicense.cc-by-nc-sa{background-position:20px -395px}
+#packageLicense.cc-by-nc-nd{background-position:20px -495px}
+#packageLicense.cc-0{background-position:20px -595px}
+
+/* Hint & Feedback */
+.iDevice_hint_content{border:1px solid #cec486;background:#ecf0f1}
+.iDevice_inner .feedback,
+.iDevice_inner .feedback-right,
+.iDevice_inner .feedback-wrong{background:#f2f2f2;border:1px solid #343333;padding:0 1em;margin:1em 0}
+.iDevice_inner .iDevice_answer-feedback{background:none;border:none;padding:0;margin:0}
+.TrueFalseIdevice .feedback{margin-top:1.5em}
+
+/* Edition */
+#activeIdevice .js-idevide-icon-preview{max-width:64px;max-height:64px}
+/* iDevice edition buttons */
+.exe-authoring-page .em_iDevice .idevice-edition-buttons{left:10px;bottom:-18px}
+
+/* TinyMCE */
+.EducaAnd_IMP{color:#499113}
+.EducaAnd_EXP{color:#0065ab}
+.EducaAnd_COM{color:#784aba}
+
+/* Print */
+@media print{
+	#header{padding-top:0px!important}
+	body{text-align:justify!important;color:#000!important}
+	ol,ul{color:#000!important}
+	#header #headerContent h1{margin-right:80px!important}
+	#exe-node-0 header.nodeDecoration h1.nodeTitle{padding-left:0}
+	header.nodeDecoration h1.nodeTitle{page-break-after:none!important}
+	#header{height:auto;font-size:1em;text-align:left;padding:0px 25px 16px 0px;border:none;margin-bottom:0}
+	.nodeDecoration{padding-top:10px}
+	#headerContent{min-height:51px;background:url(_escolares_logo.png) no-repeat 100% 20%;padding-bottom:15px}
+	#nodeDecoration,#emptyHeader{color:#000;text-shadow:none;background:none;border:2px solid #CC6715;padding:5px 5px 10px 15px;margin-left:10px}
+	#nodeDecoration,#header,#emptyHeader{color:#000;text-shadow:none;background:none;border:none;padding:20px 0}
+	#packageLicense{text-align:left;font-size:.8em;padding:0 20px;color:#444;line-height:1em;margin:0 0 25px 0;background:#fff;border-top:1px solid #00843d}
+	#packageLicense p{margin:20px 0}
+	#packageLicense a{color:#444;text-decoration:underline}
+	#packageLicense.propietary{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+	#packageLicense.cc{padding:0 20px 0px 110px;background:transparent url(_escolares_licenses.gif) no-repeat 20px 5px}
+	#packageLicense.cc-by-sa{background-position:20px -95px}
+	#packageLicense.cc-by-nd{background-position:20px -195px}
+	#packageLicense.cc-by-nc-sa{background-position:20px -295px}
+	#packageLicense.cc-by-nc-nd{background-position:20px -395px}
+	#packageLicense.cc-0{background-position:20px -495px}
+	#packageLicense,#packageLicense a,#nodeTitle{color:#000}
+	.iDevice_header{padding:5px 0!important;background:none!important}
+	.iDevice_header h2{padding-left:0px}
+	
+	.nodeTitle{color:#ffa052}   
+	.iDevice_inner .feedback{background:#fff!important}
+	.feedbackbutton,.feedback-button input,.iDevice_buttons input,ul.fx-tabs{display:none!important}
+	a{font-weight:bolder;text-decoration:none!important}
+	a[href^=http]:after{content:" <" attr(href) "> "}	
+	.emphasis0:has(>.iDevice_content>.exe-text>p>.external-iframe-src){margin:0px!important}
+	iframe.external-iframe{display:none}
+	/* No iframe content */
+	 .external-iframe-src{display:block!important;font-size:.70em;text-align:left;padding:5px 10px 10px 50px;text-align:center}
+	 .external-iframe-src a:after{content:""}
+	.exe-dialog-text{display:block!important}
+	.fx-accordion-content,.fx-timeline-event{display:block!important}
+	.exe-accordion{width:100%!important;background-color:#fff!important}
+	.fx-accordion-section:last-child .fx-accordion-title{padding-left:10px!important}
+	.exe-accordion{border:1px solid #fff!important}
+	.fx-accordion-title{border-top:1px solid #fff!important}
+	body .fx-accordion-title,.exe-accordion h2{font-size:1em}
+	.fx-accordion-content{padding:15px 15px 10px 0px}
+	.container-wrapper-genially{max-height:800px!important}
+	h2.pp_title{color:#00843d}
+	a.fx-accordion-title h2:before,a.fx-accordion-title h2:hover{content:none!important}
+	.fx-accordion-title-0{border-bottom:1px solid #fff!important}
+	.exe-paginated .fx-pagination,.fx-carousel-pagination .fx-carousel-next,.fx-carousel-pagination .fx-carousel-prev,.fx-carousel-pagination{display:none}
+	.fx-page-content{border:none;margin:0px auto;padding:5px}
+	.exe-paginated h2,.fx-tab-content h2{margin-top:-30px!important;margin-bottom:0px;color:#872C1A}
+	.js .exe-carousel{margin-top:30px}
+	.fx-carousel-content{border:none;display:inline;margin-left:-1.2em;margin-right:0px;padding-top:20px}
+	.js .exe-carousel h2{margin-top:-1.5em}
+	.exe-tabs .fx-tab-content{display:none;background:#fff;padding:15px;border-top:none!important;position:relative;z-index:99;bottom:10px}
+	.js .exe-tabs{background-color:white;width:100%;border:none}
+	div.node,article.node{page-break-after:always}
+	.selecciona-IDevice,.candado-IDevice,.desafio-IDevice,.exe-interactive-video,.rosco-IDevice,.quext-IDevice,.adivina-IDevice,.vquext-IDevice,.auto-geogebra{display:none!important}
+	.SeleccionaIdevice h1.iDeviceTitle,.desafioIdevice h1.iDeviceTitle,.candadoIdevice h1.iDeviceTitle,.AdivinaIdevice h1.iDeviceTitle,.QuExtIdevice h1.iDeviceTitle,.RoscoIdevice h1.iDeviceTitle,.VideoQuExtIdevice h1.iDeviceTitle,.SeleccionaIdevice h2.iDeviceTitle,.desafioIdevice h2.iDeviceTitle,.candadoIdevice h2.iDeviceTitle,.AdivinaIdevice h2.iDeviceTitle,.QuExtIdevice h2.iDeviceTitle,.RoscoIdevice h2.iDeviceTitle,.VideoQuExtIdevice h2.iDeviceTitle{color:#0065ab;padding-left:0px!important}
+	.SeleccionaIdevice .iDevice_inner,.desafioIdevice .iDevice_inner,.candadoIdevice .iDevice_inner,.AdivinaIdevice .iDevice_inner,.QuExtIdevice .iDevice_inner,.RoscoIdevice .iDevice_inner,.VideoQuExtIdevice .iDevice_inner,.interactive-videoIdevice .iDevice_inner{border:none!important}
+	.SeleccionaIdevice:after,.desafioIdevice:after,.candadoIdevice:after,.GeoGebraIdevice:after,.AdivinaIdevice:after,.QuExtIdevice:after,.RoscoIdevice:after,.VideoQuExtIdevice:after,.interactive-videoIdevice:after{content:"—";text-align:center;display:block;margin:1em 0}
+	article.node:last-child{page-break-after:initial}
+	.iDevice_solution.feedback h1{font-size:12px!important;color:#444}
+	.fx-timeline-container a.fx-timeline-expand{display:none}
+	.iDevice_destacadofpd{margin-top:40px;border-top:1px solid #2E2e2E!important;border-right:none!important;border-left:none!important;border-bottom:1px solid #2E2e2E!important;box-shadow:none!important;text-align:justify!important}
+	.iDevice_inner{margin-top:5px;padding:10px 20px 0px 10px;background:#fff;border-top:1px solid #2E2e2E!important;border-right:none!important;border-left:none!important;border-bottom:1px solid #2E2e2E!important;box-shadow:none!important;text-align:justify!important;border-radius:0px!important}
+	.hidden-idevice .iDevice_inner{display:block!important}
+	.toggle-idevice{display:none}
+	.iDevice_content{text-align:justify!important;color:#000}
+	.iDevice_inner p,.iDevice_inner ul li,.iDevice_inner ol li{text-align:justify!important}
+	.iDeviceTitle{top:25px!important;display:inline}
+	.iDevice{margin:10px 0!important}
+	.js .exe-paginated h2,.js .exe-carousel h2{font-size:1.1em}
+}
+
+
+/* Specific rules and impromevemts for Infantil style*/
+.iDevice_header{background-color:rgb(245, 245, 255);border-radius:19px 19px 20px 20px; background-size: 35px; background-position: 15px} 
+.iDevice {box-shadow:0px 18px 16px -6px rgba(0,101,171,0.37);border-radius:20px;box-shadow:0px 18px 16px -6px;background-color:rgb(245, 245, 255);}
+.iDeviceTitle{padding-right: 41px; top: 8px}
+.toggle-idevice a{display:inline-block;width:40px;height:40px;background:url(_escolares_icons.png) no-repeat 0 -40px;top: 25px; right: -50px;} 
+.iDevice_header .toggle-idevice{position:absolute;right:13px;bottom:35px;margin:0}
+.iDevice.emphasis0 {padding: 20px;}
+.toggle-idevice + .iDevice.emphasis0 {    margin-top: -25px !important; padding: 20px !important;} 
+.toggle-idevice.toggle-em0  {    min-height: 40px;    position: relative;     top: 17px;    z-index: 100;}
+#nodeDecoration{padding:0 30px 0 0;margin:0 0 25px 0;border:none;text-shadow:none;background:none;border-bottom:2px solid #fd8417}
+#nodeTitle{color:#fd8417;font-size:1.7em;font-weight:bold;margin-right:2.3em}
+.iDevice_wrapper[class*='RubricIdevice'] .exe-table {line-height: normal;}
+.iDevice_wrapper[class*='RubricIdevice'] .exe-table td, .iDevice_wrapper[class*='RubricIdevice'] .exe-table th {padding: 0.3em;/*word-break: break-all;*/}
+.iDevice_wrapper[class*='download-packageIdevice'] .iDevice_inner {font-family: Arial,Helvetica,sans-serif;}
+.exe-dl .icon, .exe-dl-toggler a {height: 30px;}
+div.pp_inline div.exe-media-video-box video {height:inherit}
+.exe-udlContent-alt-bottom .exe-udlContent-content-nav {   position: static; }
+/*problema con idevices de texto que no tienen títulos , sale la letra mas pequeña */
+article.textIdevice > div.iDevice > div.iDevice_content{font-size: 1.0em; }
+
+/* UDL iDevice */
+.js-hidden .exe-udlContent-content-block  {border-bottom: solid; border-color:gray;}
+.exe-udlContent-block-toggler:hover {background-color: #F7F7F7;border-radius:10px;}
+.exe-udlContent-alt-bottom .exe-udlContent-content-nav {    position: static !important;}
+
+:any-link {word-wrap: break-word; }
+ 
+/*Boo font is not well rendered in big screens*/
+@-moz-document url-prefix() { 
+	body {letter-spacing: 0px; } 
+}
+
+#nodeDecoration.logocrea { background: url(exe.png) no-repeat;background-position: right 10px top 0px;background-color: #FFF;z-index:  101;position: fixed;top: 0; width: 100%; transition: top 0.3s; margin-left: -15px;background-size: 200px;background-position-y: 5px;}
+
+#nodeDecoration.logocrea #zoomin, #nodeDecoration.logocrea #zoomout, #nodeDecoration.logocrea #letraszoom {display: block;position:absolute;z-index: 101;top: 15px;width: 30px;height: 30px;padding: 0;background: url(_infantil_zoom_icons.png) no-repeat 0 0;background-size: 30px;}
+
+#nodeDecoration.logocrea #zoomin {right: 210px;background-position: 0 -29px;}
+#nodeDecoration.logocrea #zoomout {right: 280px;background-position: 0 -60px;}
+#nodeDecoration.logocrea #letraszoom {right: 241px;background-position: 0 0;background-size: 34px;width: 34px;top:12px}
+#nodeDecoration.logocrea #zoominspan, #nodeDecoration.logocrea #zoomoutspan {position: absolute;overflow: hidden;clip: rect(0,0,0,0);height: 0;}
+#nodeDecoration.logocrea h1#nodeTitle {width: calc(100% - 300px);overflow: hidden;text-overflow: ellipsis;max-height: 70px;word-break:break-all;}
+
+/* Cite is shown in the Infantil font*/
+.styled-qc { font: 1.15em/2 "Infantil",Arial,Helvetica,sans-serif;font-style: oblique;}
+
+/*TEMPORAL: Task iDevice calc wrong the margin-left and width in the hardcoded HTML*/
+.pbl-task-info dd {text-align: left;padding-left: .5em;float: left;margin: 0 !important; }
+.pbl-task-info dt {margin: 0;float: left;clear: left;}
+.pbl-task-info {text-align: left;}
+
+
+@media all and (max-width:768px){
+	#nodeDecoration.logocrea h1#nodeTitle {width: calc(100% - 140px);overflow: hidden;text-overflow: ellipsis;max-height: 70px;word-break: break-all; min-height: 60px;display: flex;align-items: center;line-height: 1.1em;font-size: 21px;}
+	#nodeDecoration.logocrea #zoomout {	right: 110px;}
+	#nodeDecoration.logocrea #letraszoom {right: 70px;}
+	#nodeDecoration.logocrea #zoomin {right: 40px;}
+	#nodeDecoration.logocrea {background:0; background-color: #FFF;}
+	/*blackqoute is not well rendered in small screens*/
+	.styled-qc {margin: 1.5em 0.5em;margin: 0;padding: 0px 10px 0px 50px;}
+	.feedbackbutton, .feedback-button input, .iDevice_buttons input {white-space: break-spaces;}
+	/*iDeviceTask show not well dt and dd tags because style is hardcoded in HTML */
+	.pbl-task-info {word-wrap: break-word;margin:0px 0px 35px 0px;float:left;}
+	dd.pbl-task-duration[style], dd.pbl-task-participants[style] {margin-left: 0px !important; clear:left !important; text-align: right !important;}
+	dt.pbl-task-duration[style], dt.pbl-task-participants[style] {width: auto !important;}
+}
+
+/* All text is shown in the Infantil font
+*[style] {font-family: 'Infantil' !important;}*/
+
